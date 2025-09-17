@@ -22,14 +22,14 @@
   <arg name="color_height"        default="480"/>
   <arg name="enable_color"        default="true"/>
 
-  <arg name="fisheye_fps"         default="60"/>
-  <arg name="depth_fps"           default="60"/>
-  <arg name="infra_fps"           default="60"/>
+  <arg name="fisheye_fps"         default="30"/>
+  <arg name="depth_fps"           default="30"/>
+  <arg name="infra_fps"           default="30"/>
   <arg name="color_fps"           default="30"/>
   <arg name="gyro_fps"            default="400"/>
   <arg name="accel_fps"           default="250"/>
-  <arg name="enable_gyro"         default="false"/>
-  <arg name="enable_accel"        default="false"/>
+  <arg name="enable_gyro"         default="true"/>
+  <arg name="enable_accel"        default="true"/>
 
   <arg name="enable_pointcloud"   default="false"/>
   <arg name="enable_sync"         default="false"/>
@@ -38,9 +38,9 @@
   <arg name="filters"             default=""/>
 
   <rosparam>
-    /camera/stereo_module/emitter_enabled: 1
-    /camera/stereo_module/inter_cam_sync_mode: 4
-    /camera/rgb_camera/auto_exposure_priority: true
+    /camera/stereo_module/emitter_enabled: 0
+    /camera/stereo_module/inter_cam_sync_mode: 0
+    /camera/rgb_camera/auto_exposure_priority: false
   </rosparam>
 
   <group ns="$(arg camera)">
