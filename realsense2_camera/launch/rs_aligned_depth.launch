@@ -33,13 +33,13 @@
 
   <arg name="enable_pointcloud"   default="false"/>
   <arg name="enable_sync"         default="false"/>
-  <arg name="align_depth"         default="false"/>
+  <arg name="align_depth"         default="true"/>
 
   <arg name="filters"             default=""/>
 
   <rosparam>
     /camera/stereo_module/emitter_enabled: 1
-    /camera/stereo_module/inter_cam_sync_mode: 4
+    /camera/stereo_module/inter_cam_sync_mode: 0
     /camera/rgb_camera/auto_exposure_priority: true
   </rosparam>
 
